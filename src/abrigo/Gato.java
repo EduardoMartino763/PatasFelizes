@@ -9,8 +9,15 @@ public class Gato extends Animal {
         this.cor = cor;
     }
 
-    /*public void miar() {
-        System.out.println(nome + " está miando: Miau Miau");*/
+    @Override
+        public void mostrarInfo() {
+            super.mostrarInfo();
+            System.out.println("Cor: " + cor);
+        }
+
+    public void miar() {
+        System.out.println(getNome() + " está miando: Miau Miau");
+
     }
-/*}*/
+}
 

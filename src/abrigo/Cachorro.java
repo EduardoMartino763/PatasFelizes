@@ -9,7 +9,13 @@ public class Cachorro extends Animal {
         this.raca = raca;
     }
 
-    /*public void latir() {
-        System.out.println(nome + "está latindo: Au Au!");*/
+    @Override
+        public void mostrarInfo() {
+            super.mostrarInfo();
+            System.out.println("Raça: " + raca);
+        }
+
+    public void latir() {
+        System.out.println(getNome() + "está latindo: Au Au!");
     }
-/*}*/
+}

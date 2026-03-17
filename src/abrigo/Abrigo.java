@@ -11,7 +11,6 @@ public class Abrigo {
     }
 
     public void listarAnimais() {
-
         for (Animal a : animais) {
             a.mostrarInfo();
             System.out.println("----------------");
@@ -19,11 +18,9 @@ public class Abrigo {
     }
 
         public void adotarAnimal(String nome) {
-
             for (Animal a : animais) {
-
-                if (a.nome.equals(nome)) {
-                    a.statusAdocao = "Adotado";
+                if (a.getNome().equals(nome)) {
+                    a.setStatusAdocao("Adotado");
                     System.out.println(nome + " foi Adotado!");
                     return;
                 }
